@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>{{ meta.title }} | {{ site_title }}</title>
+	<meta name="description" content="{{ meta.description|striptags }}" />
+	<link rel="shortcut icon" href="{{ theme_url }}/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="{{ theme_url }}/css/_style.css">
+	<link rel="stylesheet" href="{{ theme_url }}/css/grid.css">
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="nav">
+      <ul>
+        <h1><a href="https://danielpullan.co.uk">{{ site_title }}</a></h1>
+</header>
+
+<div class="container">
+		<div class="col-12">
+			{{ meta.category }}
+			<a href="{{ current_page.url }}">{{ meta.title }}</a>
+			<span style="color:#fff">{{ meta.date }}</span>
+			{{ content }}
+			<img src="{{ meta.featured }}" alt="{{ meta.title }}" class="img-responsive">
+		</div>
+</div>
+
+</body>
+</html>

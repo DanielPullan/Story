@@ -1,0 +1,6 @@
+Grid system is Simplegrid (https://simplegrid.io/) by Zach Cole (http://zcole.me/)
+Original template was Magazine (https://github.com/BesrourMS/magazine) by Mohamed Safouan Besrour (https://besrourms.github.io/)
+Using Oswald font (hosted on Google Fonts) by  Vernon Adams (https://github.com/vernnobile)
+Pico CMS (http://picocms.org/) made by Gilbert Pellegrom (http://gilbitron.me/blog) maintained by it's community.
+
+If I've missed out anybody, please email me directly at dan@3264.uk.

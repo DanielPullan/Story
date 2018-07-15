@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>{{ site_title }} &mdash; {{ meta.description|striptags }}</title>
+    <meta name="description" content="{{ meta.description|striptags }}" />
+    <meta name="author" content="{{ config.author }}" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/grid.css">
+    <link rel="stylesheet" href="{{ theme_url }}/css/_style.css">
+</head>
+
+<body>
+
+{% include 'header.html' %}
+
+<div class="articleGrid">
+    <div class="row">
+        {% for page in pages|sort_by("time")|reverse %}
+        {% if page.meta.template == "singleProject" %}
+            <article class="col-4">
+            <figure>
+                <a href="{{ page.url }}"><img src="{{ page.meta.thumbnail }}" alt="{{ page.title }}" class="img-responsive"></a>
+            </figure>
+                <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                <span>{{ page.date }}</span>
+            </article>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    console.log("Hi! Email dan@3264.uk");
+    console.log("")
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
