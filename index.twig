@@ -12,7 +12,6 @@
 
 {% include 'header.html' %}
 
-
 <div class="articleGrid">
     <div class="row">
         {% for page in pages|sort_by("time")|reverse %}
@@ -29,16 +28,7 @@
     </div>
 </div>
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
+{% include 'footer.html' %}
 
 </body>
 </html>
