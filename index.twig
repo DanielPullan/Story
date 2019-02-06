@@ -6,11 +6,13 @@
     <meta name="author" content="{{ config.author }}" />
     <link rel="stylesheet" href="{{ theme_url }}/css/grid.css">
     <link rel="stylesheet" href="{{ theme_url }}/css/_style.css">
+    <script src="{{ theme_url }}/js/konami.js"></script>
 </head>
 
 <body>
 
 {% include 'header.html' %}
+
 
 <div class="articleGrid">
     <div class="row">
@@ -28,7 +30,16 @@
     </div>
 </div>
 
-{% include 'footer.html' %}
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 
 </body>
 </html>
