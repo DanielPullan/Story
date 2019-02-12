@@ -10,20 +10,6 @@ In the beginning there was light. Then a whole bunch of stuff happened and an IT
 
 Absolutely! Download the latest release, put it your PicoCMS's /themes folder and edit your config file to set the theme to Story.
 
-I strongly recommend picking some colours that you think reflect you and editing the _style.css file. Currently the top looks like this:
-
-``` :root {
-    --text: #eeeeee;
-    --link: #DC3D24;
-    --title: #DC3D24;
-    --background: #1a1a1a;
-    --hover: #eeeeee;
-    --code: #eeeeee;
-}
-``` 
-
-Just find the hexcodes of the colours you think reflect you and it will change all over your website. This saves having to change a million colours, there's only 6.
-
 ## Can I use Story for my <insert not Pico CMS here> website?
 
 Absolutely, let me know!
