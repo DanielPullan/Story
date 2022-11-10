@@ -1,9 +1,0 @@
-
-T I M E  F O R  C R E D I T
-
-Zach Cole (http://zcole.me) - For developing SimpleGrid (https://simplegrid.io).
-Mohamed Safouan Besrour (https://besrourms.github.io) - For developing Magazine (https://github.com/BesrourMS/magazine) the original theme that Story is based on.
-Vernon Adams (https://github.com/vernnobile) - For developing the Oswald Font (as well as many others). 
-Gilbert Pellegrom (http://gilbitron.me/) and the Pico CMS Community - For building and maintaining PicoCMS (https://picocms.org)
-
-If I've missed out anybody, please email me directly at dan@3264.uk with the subject line "u 4got me bruv".

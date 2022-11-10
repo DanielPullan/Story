@@ -1,26 +1,32 @@
-<html>
-
-<head>
-    <title>{{ site_title }} &mdash; {{ meta.description|striptags }}</title>
-    <meta name="description" content="{{ meta.description|striptags }}" />
-    <meta name="author" content="{{ config.author }}" />
-    <link rel="stylesheet" href="{{ theme_url }}/css/grid.css">
-    <link rel="stylesheet" href="{{ theme_url }}/css/_style.css">
-</head>
-
-<body>
-
 {% include 'header.html' %}
+
 
 <div class="articleGrid">
     <div class="row">
+    <h2>Projects</h2>
+    <p>Recent (or recent-ish) projects that I still work on or plan to work on.</p>
         {% for page in pages|sort_by("time")|reverse %}
         {% if page.meta.template == "singleProject" %}
             <article class="col-4">
             <figure>
                 <a href="{{ page.url }}"><img src="{{ page.meta.thumbnail }}" alt="{{ page.title }}" class="img-responsive"></a>
             </figure>
-                <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                <p><a href="{{ page.url }}">{{ page.title }}</a></p>
+                <span>{{ page.date }}</span>
+            </article>
+        {% endif %}
+        {% endfor %}
+    </div>
+        <div class="row">
+        <h2>Retired Projects</h2>
+        <p>The below are either dead, retired or have ran their course.</p>
+        {% for page in pages|sort_by("time")|reverse %}
+        {% if page.meta.template == "retiredProject" %}
+            <article class="col-4">
+            <figure>
+                <a href="{{ page.url }}"><img src="{{ page.meta.thumbnail }}" alt="{{ page.title }}" class="img-responsive"></a>
+            </figure>
+                <p><a href="{{ page.url }}">{{ page.title }}</a></p>
                 <span>{{ page.date }}</span>
             </article>
         {% endif %}
@@ -29,6 +35,3 @@
 </div>
 
 {% include 'footer.html' %}
-
-</body>
-</html>

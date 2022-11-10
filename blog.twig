@@ -1,17 +1,5 @@
-<html>
-
-<head>
-    <title>{{ site_title }} &mdash; {{ meta.description|striptags }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ meta.description|striptags }}" />
-    <meta name="author" content="{{ config.author }}" />
-    <link rel="stylesheet" href="{{ theme_url }}/css/grid.css">
-    <link rel="stylesheet" href="{{ theme_url }}/css/_style.css">
-</head>
-
-<body>
-
 {% include 'header.html' %}
+
 
 <div class="articleGrid">
     <div class="row">
@@ -30,6 +18,3 @@
 </div>
 
 {% include 'footer.html' %}
-
-</body>
-</html>

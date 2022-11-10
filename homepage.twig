@@ -1,27 +1,14 @@
-<html>
-
-<head>
-    <title>{{ site_title }} &mdash; {{ meta.description|striptags }}</title>
-    <meta name="description" content="{{ meta.description|striptags }}" />
-    <meta name="author" content="{{ config.author }}" />
-    <link rel="stylesheet" href="{{ theme_url }}/css/grid.css">
-    <link rel="stylesheet" href="{{ theme_url }}/css/_style.css">
-</head>
-
-<body>
-
 {% include 'header.html' %}
 
-<div class="container">
+<!-- homepage -->
     <div class="row">
         <div class="col-12">
-	    <h2>Welcome!</h2>
+            <img class="me" src="{{config.mugshot}}"> <!-- Set your picture in your config.yml file -->
+            <h2 class="homeTitle">{{config.intro}}</h2> <!-- Set your intro in your config.yml file -->
+            <p>{{config.about}}</p> <!-- Set your about in your config.yml file -->
+        </div>
+    </div>
 
-<p>Introduce yourself here or something,</p>
-
-<p>I need to do work on this page</p>
+<!-- /homepage -->
 
 {% include 'footer.html' %}
-
-</body>
-</html>

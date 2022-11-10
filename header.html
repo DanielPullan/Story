@@ -1,12 +1,28 @@
-<header>
-        <h1><a href="{{ base_url }}">{{ site_title }}</a></h1>
-<p>{{ config.tagline }}</p>
-<div class="topnav" id="myTopnav">
-  <a href="/">Home</a>
-  <a href="/gallery">Gallery</a>
-  <a href="/projects">Projects</a>
-  <a href="/blog">Blog</a>
-  <a href="/cv">CV</a>
-</div>
+<!-- header -->
+<!DOCTYPE html>
 
-</header>
+<head>
+    <title>{{ site_title }}</title>
+    <meta name="description" content="{{meta.description}}">
+    <meta name="author" content="Dan Moore">
+    <link rel="stylesheet" href="{{theme_url}}/css/grid.css">
+    <link rel="stylesheet" href="{{theme_url}}/css/_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<div class="container">  <!-- This gets closed in footer.html -->
+    
+    <div class="row">
+        <div class="col-12" style="text-align: left;">
+            <div class="topnav" id="myTopnav">
+                <a href="/" class='title'>{{ site_title }}</a>
+                <a href="/cv">CV</a>
+                 <a href="/projects">Projects</a>
+                <a href="https://github.com/danielpullan">GitHub</a>
+            </div>
+        </div>
+    </div>
+<!-- /header -->

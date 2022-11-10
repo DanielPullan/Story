@@ -1,12 +1,12 @@
-/* _style.css by Dan Moore */
+/* alt.css by Dan Moore */
 
 
 :root {
   /* Titles use secondary colour, body text uses primary, things like code comments use tertiary */
   /* Change colours in :root as you can theme your own version with your own colours quickly */
   /* 404552 old bg */
-  --background: #111111;
-  --primary_colour: #fff;
+  --background: #fff;
+  --primary_colour: #111;
   --secondary_colour: #2f7cda;
   --title_font: 'Fira Sans', sans-serif;
   --body_font: 'Fira Sans', sans-serif;
@@ -34,8 +34,9 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: var(--primary_colour);
-text-decoration: underline var(--secondary_colour) 2px;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
 }
 
 a:visited {
@@ -132,8 +133,8 @@ li a {
 }
 
 .topnav a:hover {
-  color: var(--primary_colour);
-  text-decoration: underline var(--secondary_colour) 2px;;
+  background-color: var(--primary_colour);
+  color: black;
 }
 
 .active {
@@ -155,8 +156,8 @@ li a {
   display: block;
 }
 
-.title {
-  color: var(--secondary_colour) !important;
+.homeTitle {
+  text-align: center;
 }
 
 .homeText {
